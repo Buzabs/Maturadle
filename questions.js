@@ -72,6 +72,62 @@ const QUESTIONS = [
     ],
     correctIndex: 0,
     explanation: "Zwijamy wyrażenie ze wzoru skróconego mnożenia: $x^2 + 10x + 25 = (x + 5)^2$. Podstawiamy $x = \\sqrt{2} - 5$: $(\\sqrt{2} - 5 + 5)^2 = (\\sqrt{2})^2 = 2$."
+  },
+  {
+    id: 7,
+    source: "Matura Maj 2025, zad. 1",
+    topic: "Liczby rzeczywiste (potęgi i pierwiastki)",
+    question: "Liczba $(\\sqrt{32} - \\sqrt{2})^2$ jest równa",
+    options: [
+      "$16$",
+      "$18$",
+      "$30$",
+      "$34$"
+    ],
+    correctIndex: 1,
+    explanation: "Upraszczamy pierwiastek: $\\sqrt{32} = \\sqrt{16 \\cdot 2} = 4\\sqrt{2}$. Podstawiamy do wyrażenia: $(4\\sqrt{2} - \\sqrt{2})^2 = (3\\sqrt{2})^2 = 9 \\cdot 2 = 18$."
+  },
+  {
+    id: 8,
+    source: "Matura Maj 2025, zad. 2",
+    topic: "Liczby rzeczywiste (potęgi)",
+    question: "Liczba $\\frac{5^{12} + 5^{13} + 5^{14}}{5^{12}}$ jest równa",
+    options: [
+      "$30$",
+      "$31$",
+      "$5^{12}$",
+      "$5^{27}$"
+    ],
+    correctIndex: 1,
+    explanation: "Wyciągamy wspólny czynnik $5^{12}$ przed nawias w liczniku: $\\frac{5^{12}(1 + 5^1 + 5^2)}{5^{12}} = 1 + 5 + 25 = 31$."
+  },
+  {
+    id: 9,
+    source: "Matura Maj 2025, zad. 3",
+    topic: "Logarytmy",
+    question: "Liczba $\\log_3 108 - 2\\log_3 2$ jest równa",
+    options: [
+      "$3$",
+      "$9$",
+      "$\\log_3 104$",
+      "$2\\log_3 54$"
+    ],
+    correctIndex: 0,
+    explanation: "Korzystamy z własności logarytmów: $\\log_3 108 - 2\\log_3 2 = \\log_3 108 - \\log_3 2^2 = \\log_3 108 - \\log_3 4 = \\log_3 \\frac{108}{4} = \\log_3 27 = 3$."
+  },
+  {
+    id: 10,
+    source: "Matura Maj 2025, zad. 4",
+    topic: "Wyrażenia algebraiczne (wzory skróconego mnożenia)",
+    question: "Dla każdej liczby rzeczywistej $x$ wartość wyrażenia $(3x + 2)^2 - (2x - 3)^2$ jest równa wartości wyrażenia",
+    options: [
+      "$5x^2 - 5$",
+      "$5x^2 + 13$",
+      "$5x^2 + 24x - 5$",
+      "$5x^2 + 24x - 13$"
+    ],
+    correctIndex: 2,
+    explanation: "Stosujemy wzory na kwadrat sumy i kwadrat różnicy: $(9x^2 + 12x + 4) - (4x^2 - 12x + 9) = 9x^2 + 12x + 4 - 4x^2 + 12x - 9 = 5x^2 + 24x - 5$."
   }
 
 ];
