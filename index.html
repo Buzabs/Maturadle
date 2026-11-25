@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+    <script defer src="questions.js"></script>
+    <script defer src="app.js"></script>
+    <title>Maturadle</title>
+</head>
+<body>
+    <header>
+        <h1>Maturadle</h1>
+        <p class="subtitle">Codziennie nowe zadanie z matury podstawowej</p>
+        <div class="top-bar">
+            <span id="day-title">Dzień #1</span>
+            <span>Seria: <strong id="streak-count">0 dni</strong></span>
+        </div>
+    </header>
+
+    <main>
+        
+        <section id="start-screen" class="start-screen">
+            <p>Masz dziś jedno zadanie maturalne. Sprawdź się i utrzymaj passę!</p>
+            <button id="start-btn" type="button" class="primary-btn">Rozpocznij</button>
+        </section>
+
+        
+        <section id="game-screen" class="game-screen hidden">
+            <div id="question-source" class="meta"></div>
+            <div id="question-text" class="question-text"></div>
+
+            <div id="options-container" class="options-container"></div>
+
+            <div id="explanation-box" class="explanation-box hidden"></div>
+
+            <div class="actions">
+                <button id="demo-next-btn" type="button" class="ghost-btn">Następny dzień (demo)</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
